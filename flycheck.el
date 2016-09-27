@@ -8002,7 +8002,7 @@ Update the error level of ERR according to
 
 Requires Flake8 3.0 or newer. See URL
 `https://flake8.readthedocs.io/'."
-  :command ("flake8"
+  :command ("python" "-m" "flake8"
             "--format=default"
             "--stdin-display-name" source-original
             (config-file "--config" flycheck-flake8rc)
@@ -8045,7 +8045,7 @@ This syntax checker requires Pylint 1.0 or newer.
 
 See URL `https://www.pylint.org/'."
   ;; -r n disables the scoring report
-  :command ("pylint" "-r" "n"
+  :command ("python" "-m" "pylint" "-r" "n"
             "--msg-template"
             (eval (if flycheck-pylint-use-symbolic-id
                       "{path}:{line}:{column}:{C}:{symbol}:{msg}"
