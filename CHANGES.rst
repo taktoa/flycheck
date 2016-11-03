@@ -23,6 +23,7 @@
 
   - Protobuf with ``protoc`` [GH-1125]
   - systemd-analyze with ``systemd-analyze`` [GH-1135]
+  - Rust with ``cargo clippy`` [GH-1156]
   - Nix with ``nix-instantiate`` [GH-1164]
   - Dockerfile with ``hadolint`` [GH-1194]
   - AsciiDoc with ``asciidoctor`` [GH-1167]
